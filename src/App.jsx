@@ -1,9 +1,17 @@
+import { createBrowserRouter, Route, createRoutesFromElements, RouterProvider } from 'react-router-dom'
+import RootLayout from './components/RootLayout'
+
 function App() {
 
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path="/" element={<RootLayout />}>
+
+      </Route>
+    ))
+
   return (
-    <div className="">
-      asdas
-    </div>
+    <RouterProvider router={router} />
   )
 }
 
