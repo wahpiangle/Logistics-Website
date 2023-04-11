@@ -11,7 +11,7 @@ export default {
         secondary: "#F4F4F4",
         heading: "#1C1F35",
         paragraph: "#666C89"
-      }
+      },
     },
   },
   plugins: [],
