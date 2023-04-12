@@ -14,7 +14,8 @@ import shipImg from './ship_img.png';
 import iconClockBlue from './icon_clock_blue.png';
 import iconMailBlue from './icon_mail_blue.png';
 import iconPhoneBlue from './icon_phone_blue.png';
-
+import cargoBox from './cargo-box.png';
+import womanPlane from './woman_plane.png'
 export{
     companyLogo,
     iconBox,
@@ -32,4 +33,6 @@ export{
     iconClockBlue,
     iconMailBlue,
     iconPhoneBlue,
+    cargoBox,
+    womanPlane,
 }
