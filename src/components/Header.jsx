@@ -2,9 +2,9 @@ import { companyLogo, iconClockBlue, iconPhoneBlue, iconMailBlue } from '../asse
 
 export default function Header() {
     return (
-        <header className='bg-primary py-8 flex justify-around items-center'>
+        <header className='bg-primary py-8 flex justify-around items-center gap-8'>
             <img src={companyLogo} className='max-h-[36px] max-w-[210px]' />
-            <div className='flex gap-12'>
+            <div className='md:flex gap-12 hidden'>
                 <div className='flex items-center gap-2'>
                     <img src={iconClockBlue} className='object-contain h-9 w-9' />
                     <div>
