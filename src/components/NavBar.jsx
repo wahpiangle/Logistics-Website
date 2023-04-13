@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlineInstagram, AiFillFacebook, AiFillTwitterCircle, AiFillLinkedin, AiOutlineMenu, } from "react-icons/ai";
 import { NavLink } from 'react-router-dom';
 import { RxCross1 } from 'react-icons/rx';
@@ -9,7 +9,17 @@ export default function NavBar() {
     const active = useSelector((state) => state.navigation.value);
     const dispatch = useDispatch();
     const [menuToggle, setToggleMenu] = useState(false);
-
+    useEffect(() => {
+        if (window.location.pathname === '/') {
+            dispatch(setHome());
+        } else if (window.location.pathname === '/about') {
+            dispatch(setAbout());
+        } else if (window.location.pathname === '/project') {
+            dispatch(setProject());
+        } else if (window.location.pathname === '/contact') {
+            dispatch(setContact());
+        }
+    },[])
     return (
         <nav className="flex justify-around bg-primary/25 gap-8">
             <ul className="md:flex gap-4 hidden">
