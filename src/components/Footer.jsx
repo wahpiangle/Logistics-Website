@@ -9,7 +9,7 @@ export default function Footer(){
             </div>
             <div className="flex justify-around px-56 gap-16">
                 <div>
-                    <p className="text-white text-[16px]">Leverage agile frameworks to provide a robust synopsis for strategy  collaborative thinking to further the overall value proposition.</p>
+                    <p className="text-white text-[14px]">Leverage agile frameworks to provide a robust synopsis for strategy  collaborative thinking to further the overall value proposition.</p>
                     <div className="flex mt-6 items-center">
                         <img src={iconMailBlue} />
                         <p className="text-white text-[14px] ml-3">Email<br/>contact@logistics.com</p>

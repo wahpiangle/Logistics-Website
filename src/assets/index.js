@@ -16,6 +16,9 @@ import iconMailBlue from './icon_mail_blue.png';
 import iconPhoneBlue from './icon_phone_blue.png';
 import cargoBox from './cargo-box.png';
 import womanPlane from './woman_plane.png'
+import planeBackground from './plane_background.png'
+import lorryMan from './lorry_man.png'
+
 export{
     companyLogo,
     iconBox,
@@ -35,4 +38,6 @@ export{
     iconPhoneBlue,
     cargoBox,
     womanPlane,
+    planeBackground,
+    lorryMan
 }
