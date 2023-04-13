@@ -1,6 +1,5 @@
 import { companyLogo, iconMailBlue, iconPhoneBlue } from "../assets"
-import { AiFillLinkedin, AiFillTwitterCircle } from "react-icons/ai"
-import { BsFacebook } from "react-icons/bs"
+import { AiFillLinkedin, AiFillTwitterCircle, AiFillFacebook } from "react-icons/ai"
 
 export default function Footer(){
     return(
@@ -22,18 +21,16 @@ export default function Footer(){
                 </div>
                 <div>
                     <form>
-                        <input type="email" placeholder="Your Email*" className="bg-transparent appearance-none border-[0.5px] text-white border-[#999999] py-3 px-4 w-[280px]"/>
+                        <input type="email" placeholder="Your Email*" className="focus:outline-none bg-transparent appearance-none border-[0.5px] text-white border-[#999999] py-3 px-4 w-[280px]"/>
                         <div className="flex items-center gap-8 justify-between">
                             <button type="submit" className="yellow-gradient mt-5 py-3 px-6">Send Now</button>
                             <div className="flex gap-4 mt-5">
                                 <AiFillLinkedin className="text-white text-2xl "/>
                                 <AiFillTwitterCircle className="text-white text-2xl"/>
-                                <BsFacebook className="text-white text-2xl"/>
+                                <AiFillFacebook className="text-white text-2xl"/>
                             </div>
                         </div>
-
                     </form>
-
                 </div>
             </div>
         </div>
