@@ -2,6 +2,8 @@ import { lorryMan, planeBackground,iconShip, iconBuilding, iconPlane, iconProjec
 import NavBar from "./NavBar"
 import { styles } from "../styles"
 import { useState } from "react"
+import { team } from "./constants/team"
+import { AiOutlineTwitter, AiFillFacebook, AiOutlineInstagram, AiFillLinkedin } from "react-icons/ai"
 
 export default function About() {
     const [buttonSelection, setButtonSelection] = useState("approach")
@@ -40,9 +42,9 @@ export default function About() {
                 </div>
             </div>
             <div className="bg-[#F4F4F4] flex flex-col items-center py-10 px-32">
-                <div className="bg-[#e8e8e88b] text-black border-l-2 border-primaryyellow px-2 text-[12px] max-w-fit">Why Us</div>
+                <div className="bg-[#e8e8e88b] text-black border-l-2 mt-2 border-primaryyellow px-2 text-[12px] max-w-fit">Why Us</div>
                 <h1 className="text-[30px] font-semibold">Our Logistics Services</h1>
-                <div className="grid grid-cols-3 grid-rows-2 gap-16 mt-8">
+                <div className="grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 gap-16 mt-8">
                     <div>
                         <img src={iconShip} className="w-9"/>
                         <h2 className="mt-2 text-lg">Sea Transport Services</h2>
@@ -75,6 +77,28 @@ export default function About() {
                     </div>
                 </div>
                 <button className="bg-primary text-white py-3 px-5 mt-8">More Works</button>
+            </div>
+            <div className="bg-[#F4F4F4] flex flex-col items-center py-10 px-32">
+                <div className="bg-[#e8e8e88b] text-black border-l-2 border-primaryyellow px-2 text-[12px] max-w-fit mt-2">The Transporters</div>
+                <h1 className="text-[30px] font-semibold">Meet Our Expert Team</h1>
+                <div className="flex lg:flex-row flex-col gap-24">
+                    {team.map((member, index) => (
+                        <div key={index}>
+                            <img className="max-w-[250px] h-auto mt-4" src={member.image}/>
+                            <div className="flex justify-end">
+                                <div className="yellow-gradient flex absolute max-w-fit text-[20px] p-4 gap-2 -mt-6">
+                                    <AiFillFacebook/>
+                                    <AiFillLinkedin/>
+                                    <AiOutlineInstagram/>
+                                </div>
+                            </div>
+                            <div className="bg-primary text-white p-4">
+                                <h2 className="font-semibold">{member.name}</h2>
+                                <p className="text-[12px]">{member.role}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     )

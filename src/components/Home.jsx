@@ -17,12 +17,12 @@ export default function Home() {
             <div className="bg-secondary flex items-center px-28 py-14 gap-10 flex-col md:flex-row">
                 <div className="max-w-2xl">
                     <div className="bg-[#00000012] text-black border-l-2 border-primaryyellow px-2 text-[12px] max-w-fit">What We Do</div>
-                    <h1 className="text-[35px] font-semibold">Safe & Reliable Cargo Solutions</h1>
+                    <h1 className="text-[28px] lg:text-[32px] font-semibold">Safe & Reliable Cargo Solutions</h1>
                 </div>
-                <div className="grid grid-cols-2 grid-rows-2 gap-8">
+                <div className="lg:grid grid-cols-2 grid-rows-2 flex flex-col gap-8">
                     <div className="flex gap-8">
                         <div>
-                            <img src={iconShip} className="object-contain w-20 h-20" />
+                            <img src={iconShip} className="object-contain w-20 h-20 max-w-12 max-h-12" />
                         </div>
                         <div className="border-l-2 px-4">
                             <h2>Sea Transport Services</h2>
@@ -31,7 +31,7 @@ export default function Home() {
                     </div>
                     <div className="flex gap-8">
                         <div>
-                            <img src={iconBuilding} className="object-contain w-20 h-20" />
+                            <img src={iconBuilding} className="object-contain w-20 h-20 max-w-12 max-h-12" />
                         </div>
                         <div className="border-l-2 px-4">
                             <h2>Warehousing Services</h2>
@@ -40,7 +40,7 @@ export default function Home() {
                     </div>
                     <div className="flex gap-8">
                         <div>
-                            <img src={iconPlane} className="object-contain w-20 h-20" />
+                            <img src={iconPlane} className="object-contain w-20 h-20 max-w-12 max-h-12" />
                         </div>
                         <div className="border-l-2 px-4">
                             <h2>Air Freight Services</h2>
@@ -49,7 +49,7 @@ export default function Home() {
                     </div>
                     <div className="flex gap-8">
                         <div>
-                            <img src={iconLorry} className="object-contain w-20 h-20" />
+                            <img src={iconLorry} className="object-contain w-20 h-20 max-w-12 max-h-12" />
                         </div>
                         <div className="border-l-2 px-4">
                             <h2>Local Shipping Services</h2>
@@ -60,11 +60,11 @@ export default function Home() {
                 </div>
             </div>
             <img src={cargoBox} />
-            <div className="relative z-10 flex gap-10 justify-around px-12 mx-48 py-12 -mt-24 bg-fixed bg-white flex-col lg:flex-row">
+            <div className="relative z-10 flex gap-10 justify-around px-12 mx-12 lg:mx-48 py-12 -mt-24 bg-fixed bg-white flex-col lg:flex-row">
                 <div className="">
                     <div className="bg-[#00000012] text-black border-l-2 border-primaryyellow px-2 text-[12px] max-w-fit">Why Us</div>
-                    <h1 className="text-[30px] font-semibold">We provide full range global logistics solution</h1>
-                    <p className="text-paragraph text-[14px] hidden md:block">Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. <br/><br/>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
+                    <h1 className="xl:text-[30px] text-[20px] font-semibold">We provide full range global logistics solution</h1>
+                    <p className="text-paragraph text-[13px]">Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. <br/><br/>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
                     <div className="flex gap-4 items-center mt-2">
                         <img src={iconBox} className="w-10 h-10"/>
                         <div>Delivery On Time</div>

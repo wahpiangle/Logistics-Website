@@ -20,7 +20,9 @@ import planeBackground from './plane_background.png'
 import lorryMan from './lorry_man.png'
 import iconProject from './icon_project.png'
 import iconCustomer from './icon_customer.png'
-
+import jessica from './Jessica.png'
+import john from './John.png'
+import rebecca from './Rebecca.png'
 export{
     companyLogo,
     iconBox,
@@ -43,5 +45,8 @@ export{
     planeBackground,
     lorryMan,
     iconProject,
-    iconCustomer
+    iconCustomer,
+    jessica,
+    john,
+    rebecca
 }
