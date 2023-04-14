@@ -60,7 +60,7 @@ export default function Home() {
                 </div>
             </div>
             <img src={cargoBox} />
-            <div className="relative z-10 flex gap-10 justify-around px-12 mx-12 lg:mx-48 py-12 -mt-24 bg-fixed bg-white flex-col lg:flex-row">
+            <div className="relative z-10 flex gap-10 justify-around px-12 mx-24 md:mx-48  py-12 -mt-24 bg-fixed bg-white flex-col lg:flex-row">
                 <div className="">
                     <div className="bg-[#00000012] text-black border-l-2 border-primaryyellow px-2 text-[12px] max-w-fit">Why Us</div>
                     <h1 className="xl:text-[30px] text-[20px] font-semibold">We provide full range global logistics solution</h1>

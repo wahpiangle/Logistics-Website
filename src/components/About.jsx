@@ -81,15 +81,15 @@ export default function About() {
             <div className="bg-[#F4F4F4] flex flex-col items-center py-10 px-32">
                 <div className="bg-[#e8e8e88b] text-black border-l-2 border-primaryyellow px-2 text-[12px] max-w-fit mt-2">The Transporters</div>
                 <h1 className="text-[30px] font-semibold">Meet Our Expert Team</h1>
-                <div className="flex lg:flex-row flex-col gap-24">
+                <div className="flex flex-wrap gap-20 justify-center">
                     {team.map((member, index) => (
                         <div key={index}>
                             <img className="max-w-[250px] h-auto mt-4" src={member.image}/>
                             <div className="flex justify-end">
                                 <div className="yellow-gradient flex absolute max-w-fit text-[20px] p-4 gap-2 -mt-6">
-                                    <AiFillFacebook/>
-                                    <AiFillLinkedin/>
-                                    <AiOutlineInstagram/>
+                                    <AiFillFacebook className="cursor-pointer"/>
+                                    <AiFillLinkedin className="cursor-pointer"/>
+                                    <AiOutlineInstagram className="cursor-pointer"/>
                                 </div>
                             </div>
                             <div className="bg-primary text-white p-4">
