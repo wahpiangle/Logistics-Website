@@ -18,6 +18,8 @@ import cargoBox from './cargo-box.png';
 import womanPlane from './woman_plane.png'
 import planeBackground from './plane_background.png'
 import lorryMan from './lorry_man.png'
+import iconProject from './icon_project.png'
+import iconCustomer from './icon_customer.png'
 
 export{
     companyLogo,
@@ -39,5 +41,7 @@ export{
     cargoBox,
     womanPlane,
     planeBackground,
-    lorryMan
+    lorryMan,
+    iconProject,
+    iconCustomer
 }

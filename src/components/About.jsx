@@ -1,4 +1,4 @@
-import { lorryMan, planeBackground } from "../assets"
+import { lorryMan, planeBackground,iconShip, iconBuilding, iconPlane, iconProject, iconCustomer, iconLorry } from "../assets"
 import NavBar from "./NavBar"
 import { styles } from "../styles"
 import { useState } from "react"
@@ -38,6 +38,43 @@ export default function About() {
                     }
                     <button className="mt-6 py-3 px-8 bg-primary text-white">Learn More</button>
                 </div>
+            </div>
+            <div className="bg-[#F4F4F4] flex flex-col items-center py-10 px-32">
+                <div className="bg-[#e8e8e88b] text-black border-l-2 border-primaryyellow px-2 text-[12px] max-w-fit">Why Us</div>
+                <h1 className="text-[30px] font-semibold">Our Logistics Services</h1>
+                <div className="grid grid-cols-3 grid-rows-2 gap-16 mt-8">
+                    <div>
+                        <img src={iconShip} className="w-9"/>
+                        <h2 className="mt-2 text-lg">Sea Transport Services</h2>
+                        <p className="text-paragraph text-[12px]">Following the quality of our service thus having gained trust of our many clients.</p>
+                    </div>
+                    <div>
+                        <img src={iconBuilding} className="w-9"/>
+                        <h2 className="mt-2 text-lg">Warehousing Services</h2>
+                        <p className="text-paragraph text-[12px]">Following the quality of our service thus having gained trust of our many clients.</p>
+                    </div>
+                    <div>
+                        <img src={iconPlane} className="w-9"/>
+                        <h2 className="mt-2 text-lg">Air Freight Services</h2>
+                        <p className="text-paragraph text-[12px]">Following the quality of our service thus having gained trust of our many clients.</p>
+                    </div>
+                    <div>
+                        <img src={iconProject} className="w-9"/>
+                        <h2 className="mt-2 text-lg">Project & Exhibition Services</h2>
+                        <p className="text-paragraph text-[12px]">Following the quality of our service thus having gained trust of our many clients.</p>
+                    </div>
+                    <div>
+                        <img src={iconLorry} className="w-9"/>
+                        <h2 className="mt-2 text-lg">Local Shipping Services</h2>
+                        <p className="text-paragraph text-[12px]">Following the quality of our service thus having gained trust of our many clients.</p>
+                    </div>
+                    <div>
+                        <img src={iconCustomer} className="w-9"/>
+                        <h2 className="mt-2 text-lg">Customer Clearance Services</h2>
+                        <p className="text-paragraph text-[12px]">Following the quality of our service thus having gained trust of our many clients.</p>
+                    </div>
+                </div>
+                <button className="bg-primary text-white py-3 px-5 mt-8">More Works</button>
             </div>
         </div>
     )
