@@ -37,6 +37,9 @@ import solution2 from './solution2.png'
 import solution3 from './solution3.png'
 import solution4 from './solution4.png'
 import solution5 from './solution5.png'
+import cargoBg from './cargoBg.png'
+import shipServices from './ship_services.png'
+import serviceLorry from './service_lorry.png'
 
 export{
     companyLogo,
@@ -77,5 +80,8 @@ export{
     solution2,
     solution3,
     solution4,
-    solution5
+    solution5,
+    cargoBg,
+    shipServices,
+    serviceLorry,
 }

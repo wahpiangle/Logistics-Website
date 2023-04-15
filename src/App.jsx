@@ -4,16 +4,17 @@ import Home from './components/Home'
 import About from './components/About'
 import Pricing from './components/Pricing'
 import Contact from './components/Contact'
-
+import Service from './components/Service'
 function App() {
 
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<RootLayout />}>
-        <Route index element={<Home/>} />
-        <Route path="about" element={<About/>}/>
-        <Route path="pricing" element={<Pricing/>}/>
-        <Route path="contact" element={<Contact/>}/>
+        <Route index element={<Home />} />
+        <Route path="about" element={<About />}/>
+        <Route path="service" element={<Service />} />
+        <Route path="pricing" element={<Pricing />} />
+        <Route path="contact" element={<Contact />} />
       </Route>
     ))
 

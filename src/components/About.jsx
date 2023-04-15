@@ -6,6 +6,7 @@ import { team } from "./constants/team"
 import { AiFillFacebook, AiOutlineInstagram, AiFillLinkedin } from "react-icons/ai"
 import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from "react-icons/bs"
 import { reviews } from "./constants/reviews"
+import { Link } from "react-router-dom"
 
 export default function About() {
     const [buttonSelection, setButtonSelection] = useState("approach")
@@ -63,7 +64,7 @@ export default function About() {
                 <div className="grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 gap-16 mt-8">
                     <div>
                         <img src={iconShip} className="w-12"/>
-                        <h2 className="mt-2 text-xl">Sea Transport Services</h2>
+                        <h2 className="mt-2 text-xl hover:text-primaryyellow"><Link to="/service">Sea Transport Services</Link></h2>
                         <p className="text-paragraph text-[12px]">Following the quality of our service thus having gained trust of our many clients.</p>
                     </div>
                     <div>
@@ -92,7 +93,7 @@ export default function About() {
                         <p className="text-paragraph text-[12px]">Following the quality of our service thus having gained trust of our many clients.</p>
                     </div>
                 </div>
-                <button className="bg-primary text-xl text-white py-3 px-5 mt-12">More Works</button>
+                <button className="bg-primary text-md text-white py-3 px-5 mt-12">More Works</button>
             </div>
             <div className="flex flex-col items-center py-10 px-12 md:px-32">
                 <div className="bg-[#e8e8e88b] text-black border-l-2 border-primaryyellow px-2 text-[12px] max-w-fit mt-2">The Transporters</div>

@@ -2,6 +2,8 @@ import NavBar from "./NavBar";
 import { shipImg, iconBuilding, iconShip, iconPlane, iconLorry, cargoBox, womanPlane,iconBox, iconCash } from "../assets";
 import { styles } from "../styles"
 import { solutions } from "./constants/solutions";
+import { Link } from "react-router-dom";
+
 export default function Home() {
     return (
         <>
@@ -25,7 +27,7 @@ export default function Home() {
                             <img src={iconShip} className="object-contain w-20 h-20 max-w-12 max-h-12" />
                         </div>
                         <div className="border-l-2 px-4">
-                            <h2>Sea Transport Services</h2>
+                            <h2 className="hover:text-primaryyellow"><Link to="/service">Sea Transport Services</Link></h2>
                             <p className="text-paragraph text-[12px]">Following the quality of our service thus having gained trust of our many clients.</p>
                         </div>
                     </div>
@@ -56,7 +58,6 @@ export default function Home() {
                             <p className="text-paragraph text-[12px]">Following the quality of our service thus having gained trust of our many clients.</p>
                         </div>
                     </div>
-
                 </div>
             </div>
             <img src={cargoBox} />
