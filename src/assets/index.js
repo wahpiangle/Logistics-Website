@@ -28,6 +28,16 @@ import customer2 from './customer2.png'
 import customer3 from './customer3.jpg'
 import customer4 from './customer4.jpg'
 import quotation from './quotation.png'
+import company1 from './company1.png'
+import company2 from './company2.png'
+import company3 from './company3.png'
+import company4 from './company4.png'
+import solution1 from './solution1.png'
+import solution2 from './solution2.png'
+import solution3 from './solution3.png'
+import solution4 from './solution4.png'
+import solution5 from './solution5.png'
+
 export{
     companyLogo,
     iconBox,
@@ -58,5 +68,14 @@ export{
     customer2,
     customer3,
     quotation,
-    customer4
+    customer4,
+    company1,
+    company2,
+    company3,
+    company4,
+    solution1,
+    solution2,
+    solution3,
+    solution4,
+    solution5
 }

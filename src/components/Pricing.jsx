@@ -1,6 +1,6 @@
 import NavBar from "./NavBar";
 
-export default function Project() {
+export default function Pricing() {
     return(
         <>
             <NavBar/>

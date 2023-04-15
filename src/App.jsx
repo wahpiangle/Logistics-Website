@@ -2,7 +2,7 @@ import { createBrowserRouter, Route, createRoutesFromElements, RouterProvider } 
 import RootLayout from './components/RootLayout'
 import Home from './components/Home'
 import About from './components/About'
-import Project from './components/Project'
+import Pricing from './components/Pricing'
 import Contact from './components/Contact'
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <Route path="/" element={<RootLayout />}>
         <Route index element={<Home/>} />
         <Route path="about" element={<About/>}/>
-        <Route path="project" element={<Project/>}/>
+        <Route path="pricing" element={<Pricing/>}/>
         <Route path="contact" element={<Contact/>}/>
       </Route>
     ))

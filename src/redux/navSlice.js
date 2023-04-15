@@ -12,8 +12,8 @@ export const navSlice = createSlice({
         setAbout:(state)=>{
             state.value = 'about'
         },
-        setProject:(state)=>{
-            state.value = 'project'
+        setPricing:(state)=>{
+            state.value = 'pricing'
         },
         setContact:(state)=>{
             state.value = 'contact'
@@ -21,5 +21,5 @@ export const navSlice = createSlice({
     }
 })
 
-export const { setHome, setAbout, setProject, setContact } = navSlice.actions
+export const { setHome, setAbout, setPricing, setContact } = navSlice.actions
 export default navSlice.reducer

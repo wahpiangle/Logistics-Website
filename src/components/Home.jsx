@@ -1,7 +1,7 @@
 import NavBar from "./NavBar";
 import { shipImg, iconBuilding, iconShip, iconPlane, iconLorry, cargoBox, womanPlane,iconBox, iconCash } from "../assets";
 import { styles } from "../styles"
-
+import { solutions } from "./constants/solutions";
 export default function Home() {
     return (
         <>
@@ -60,7 +60,7 @@ export default function Home() {
                 </div>
             </div>
             <img src={cargoBox} />
-            <div className="relative z-10 flex gap-10 justify-around px-12 mx-24 md:mx-48  py-12 -mt-24 bg-fixed bg-white flex-col lg:flex-row">
+            <div className="relative z-10 flex gap-10 justify-around px-12 mx-24 md:mx-48 my-12 py-12 -mt-24 bg-fixed bg-white flex-col lg:flex-row">
                 <div className="">
                     <div className="bg-[#00000012] text-black border-l-2 border-primaryyellow px-2 text-[12px] max-w-fit">Why Us</div>
                     <h1 className="xl:text-[30px] text-[20px] font-semibold">We provide full range global logistics solution</h1>
@@ -75,6 +75,21 @@ export default function Home() {
                     </div>
                 </div>
                 <img src={womanPlane} className="object-contain w-[400px] h-auto" />
+            </div>
+            <div className="flex justify-center flex-col">
+                <h1 className="xl:text-[30px] text-[20px] font-semibold text-center">Transporting Across The World</h1>
+                <div className="flex p-8 gap-8">
+                    {solutions.map((solution) =>(
+                        <div key={solution.index} className="cursor-pointer">
+                            <img src={solution.image} className="object-contain" />
+                            <div className="-mt-16 p-4">
+                                <h2 className="text-white text-[14px]">{solution.title}</h2>
+                                <p className="text-primaryyellow text-[12px]">{solution.subtitle}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+                <div className="yellow-gradient w-[100%] h-56 -mt-24 -z-10 flex items-center justify-center"/>
             </div>
         </>
     )
