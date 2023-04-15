@@ -3,7 +3,7 @@ import { AiOutlineInstagram, AiFillFacebook, AiFillTwitterCircle, AiFillLinkedin
 import { NavLink } from 'react-router-dom';
 import { RxCross1 } from 'react-icons/rx';
 import { useSelector, useDispatch } from 'react-redux';
-import { setHome, setAbout, setPricing, setContact } from '../redux/navSlice';
+import { setHome, setAbout, setPricing, setContact, setProject } from '../redux/navSlice';
 
 export default function NavBar() {
     const active = useSelector((state) => state.navigation.value);
@@ -18,6 +18,8 @@ export default function NavBar() {
             dispatch(setPricing());
         } else if (window.location.pathname === '/contact') {
             dispatch(setContact());
+        }else if(window.location.pathname === '/project'){
+            dispatch(setProject());
         }
     },[])
     return (
@@ -30,10 +32,17 @@ export default function NavBar() {
                 <NavLink to="/about" >
                     <li onClick={() => dispatch(setAbout())} className={`p-2 my-4 text-white cursor-pointer hover:border-b-2 ${active === 'about' ? 'border-b-2' : ""}`}>About</li>
                 </NavLink>
+
+                <div className="h-10 text-white justify-center py-6 px-1">|</div>
+                <NavLink to="/project">
+                    <li onClick={() => dispatch(setProject())} className={`p-2 my-4 text-white cursor-pointer hover:border-b-2 ${active === 'project' ? 'border-b-2' : ""}`}>Projects</li>
+                </NavLink>
+
                 <div className="h-10 text-white justify-center py-6 px-1">|</div>
                 <NavLink to="/pricing" >
                     <li onClick={() => dispatch(setPricing())} className={`p-2 my-4 text-white cursor-pointer hover:border-b-2 ${active === 'pricing' ? 'border-b-2' : ""}`}>Pricing</li>
                 </NavLink>
+
                 <div className="h-10 text-white justify-center py-6 px-1">|</div>
                 <NavLink to="/contact">
                     <li onClick={() => dispatch(setContact())} className={`p-2 my-4 text-white cursor-pointer hover:border-b-2 ${active === 'contact' ? 'border-b-2' : ""}`}>Contact</li>

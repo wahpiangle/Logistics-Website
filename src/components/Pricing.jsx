@@ -4,7 +4,7 @@ export default function Pricing() {
     return(
         <>
             <NavBar/>
-            Project
+            Pricing
         </>
 
     )

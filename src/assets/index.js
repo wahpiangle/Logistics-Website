@@ -40,6 +40,7 @@ import solution5 from './solution5.png'
 import cargoBg from './cargoBg.png'
 import shipServices from './ship_services.png'
 import serviceLorry from './service_lorry.png'
+import contact from './contact.png'
 
 export{
     companyLogo,
@@ -84,4 +85,5 @@ export{
     cargoBg,
     shipServices,
     serviceLorry,
+    contact
 }

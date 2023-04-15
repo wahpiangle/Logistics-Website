@@ -5,6 +5,7 @@ import About from './components/About'
 import Pricing from './components/Pricing'
 import Contact from './components/Contact'
 import Service from './components/Service'
+import Project from './components/Project'
 function App() {
 
   const router = createBrowserRouter(
@@ -13,6 +14,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="about" element={<About />}/>
         <Route path="service" element={<Service />} />
+        <Route path='project' element={<Project />} />
         <Route path="pricing" element={<Pricing />} />
         <Route path="contact" element={<Contact />} />
       </Route>
