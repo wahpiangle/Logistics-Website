@@ -23,6 +23,11 @@ import iconCustomer from './icon_customer.png'
 import jessica from './Jessica.png'
 import john from './John.png'
 import rebecca from './Rebecca.png'
+import customer1 from './customer1.png'
+import customer2 from './customer2.png'
+import customer3 from './customer3.jpg'
+import customer4 from './customer4.jpg'
+import quotation from './quotation.png'
 export{
     companyLogo,
     iconBox,
@@ -48,5 +53,10 @@ export{
     iconCustomer,
     jessica,
     john,
-    rebecca
+    rebecca,
+    customer1,
+    customer2,
+    customer3,
+    quotation,
+    customer4
 }
