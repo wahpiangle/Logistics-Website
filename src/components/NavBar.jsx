@@ -24,7 +24,7 @@ export default function NavBar() {
     },[])
     return (
         <nav className="flex justify-around bg-primary/25 gap-8">
-            <ul className="md:flex gap-4 hidden">
+            <ul className="lg:flex gap-4 hidden">
                 <NavLink to="/">
                     <li onClick={() => dispatch(setHome())} className={`p-2 my-4 text-white cursor-pointer hover:border-b-2 ${active === 'home' ? 'border-b-2 border-b-white' : ""}`}>Home</li>
                 </NavLink>
@@ -48,7 +48,7 @@ export default function NavBar() {
                     <li onClick={() => dispatch(setContact())} className={`p-2 my-4 text-white cursor-pointer hover:border-b-2 ${active === 'contact' ? 'border-b-2' : ""}`}>Contact</li>
                 </NavLink>
             </ul>
-            <div className="md:hidden flex p-2 my-4">
+            <div className="lg:hidden flex p-2 my-4">
                 {!menuToggle&&
                     <AiOutlineMenu className="text-white cursor-pointer text-2xl" onClick={() => setToggleMenu(state => !state)} />}
                 {menuToggle &&
@@ -67,6 +67,9 @@ export default function NavBar() {
                         </NavLink>
                         <NavLink to="/project" >
                             <li onClick={() => dispatch(setProject())} className={`p-2 my-4 text-white cursor-pointer hover:text-primaryyellow`}>Project</li>
+                        </NavLink>
+                        <NavLink to="/pricing" >
+                            <li onClick={() => dispatch(setPricing())} className={`p-2 my-4 text-white cursor-pointer hover:text-primaryyellow`}>Pricing</li>
                         </NavLink>
                         <NavLink to="/contact">
                             <li onClick={() => dispatch(setContact())} className={`p-2 my-4 text-white cursor-pointer hover:text-primaryyellow`}>Contact</li>

@@ -33,15 +33,15 @@ export default function About() {
                     <h1 className={`${styles.heroHeadText}`}>About Our Logistics</h1>
                 </div>
             </div>
-            <div className="flex py-16 px-28 gap-16 md:flex-row flex-col">
+            <div className="flex py-16 px-8 sm:px-28 gap-16 lg:flex-row flex-col">
                 <div>
-                    <img src={lorryMan} className="md:max-w-[400px] max-w-[280px] h-auto object-cover"/>
+                    <img src={lorryMan} className="lg:max-w-[400px] max-w-[280px] h-auto object-cover"/>
                 </div>
                 <div>
                     <div className="bg-[#e8e8e877] border-l-2 border-primaryyellow px-2 text-[12px] max-w-fit">About Us</div>
                     <h2 className="font-semibold mt-4 text-[32px]">Our Company Overview</h2>
                     <p className="text-paragraph text-[12px]">Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition.</p>
-                    <div className="flex gap-12 mt-4 text-[12px] md:flex-row flex-col">
+                    <div className="flex gap-4 sm:gap-12 mt-4 text-[12px] md:flex-row flex-col">
                         <button className={`${buttonSelection === 'approach'?"yellow-gradient":"bg-[#e6e6e6]"} py-3 px-6 min-w-[150px]`} onClick={()=>{setButtonSelection("approach")}}>Our Approach</button>
                         <button className={`${buttonSelection === 'story'?"yellow-gradient":"bg-[#e6e6e6]"} p-3 min-w-[150px]`} onClick={()=>{setButtonSelection("story")}}>Our Story</button>
                         <button className={`${buttonSelection === 'values'?"yellow-gradient":"bg-[#e6e6e6]"} p-3 min-w-[150px]`} onClick={()=>{setButtonSelection("values")}}>Our Values</button>
@@ -60,7 +60,7 @@ export default function About() {
             </div>
             <div className="bg-[#F4F4F4] flex flex-col items-center py-10 px-12 md:px-32">
                 <div className="bg-[#e8e8e88b] text-black border-l-2 mt-2 border-primaryyellow px-2 text-[12px] max-w-fit">Why Us</div>
-                <h1 className="text-[30px] mt-2 font-semibold">Our Logistics Services</h1>
+                <h1 className="text-[30px] mt-2 font-semibold text-center">Our Logistics Services</h1>
                 <div className="grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 gap-16 mt-8">
                     <div>
                         <img src={iconShip} className="w-12"/>
@@ -117,7 +117,7 @@ export default function About() {
                     ))}
                 </div>
             </div>
-            <div className="bg-[#F4F4F4] px-12 md:px-32 py-10">
+            <div className="bg-[#F4F4F4] px-6 md:px-32 py-10">
                 <div className="bg-[#e8e8e88b] text-blapx-12 md:px-32ck border-l-2 border-primaryyellow px-2 text-[12px] max-w-fit mt-2">Testimonial</div>
                 <div className="flex justify-between flex-col md:flex-row gap-4">
                     <h1 className="text-[35px] mt-2 font-semibold">What Our Customers Say</h1>
@@ -127,7 +127,7 @@ export default function About() {
                     </div>
                 </div>
                 <div className="flex mt-8 justify-center flex-col lg:flex-row">
-                    <div className="p-12">
+                    <div className="p-4 sm:p-12">
                         <div className="flex items-center gap-4">
                             <img src={reviews[review[0]].image} className="rounded-full h-[91px] object-cover aspect-square"/>
                             <div>
@@ -151,29 +151,29 @@ export default function About() {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center items-center py-24 md:flex-row flex-col">
+            <div className="flex justify-center items-center py-24 lg:flex-row flex-col">
                 <img src={company1} className="border-[1px] border-[#4E5683] cursor-pointer"/>
                 <img src={company2} className="border-[1px] border-[#4E5683] cursor-pointer"/>
                 <img src={company3} className="border-[1px] border-[#4E5683] cursor-pointer"/>
                 <img src={company4} className="border-[1px] border-[#4E5683] cursor-pointer"/>
             </div>
-            <div className="px-8 justify-evenly border-[#D4D4D4] border-[1px] md:flex hidden">
-                <div className="flex items-center gap-4 border-r-[1px] p-6 justify-center">
+            <div className="px-8 justify-evenly border-[#D4D4D4] border-[1px] lg:flex">
+                <div className="flex items-center gap-4 lg:border-r-[1px] p-6 justify-center">
                     <h1 className="text-[35px] font-bold">25</h1>
                     <div className="w-4 h-4 yellow-gradient"></div>
                     <p className="text-[16px]">Locations</p>
                 </div>
-                <div className="flex items-center gap-4 border-r-[1px] p-6 justify-center">
+                <div className="flex items-center gap-4 lg:border-r-[1px] p-6 justify-center">
                     <h1 className="text-[35px] font-bold">4669</h1>
                     <div className="w-4 h-4 yellow-gradient"></div>
                     <p className="text-[16px]">Delivered Packages</p>
                 </div>
-                <div className="flex items-center gap-4 border-r-[1px] p-6 justify-center">
+                <div className="flex items-center gap-4 lg:border-r-[1px] p-6 justify-center">
                     <h1 className="text-[35px] font-bold">723</h1>
                     <div className="w-4 h-4 yellow-gradient"></div>
                     <p className="text-[16px]">Satisfied Customers</p>
                 </div>
-                <div className="flex items-center gap-4 p-8">
+                <div className="flex items-center gap-4 p-6 justify-center lg:justify-normal">
                     <h1 className="text-[35px] font-bold">83+</h1>
                     <div className="w-4 h-4 yellow-gradient"></div>
                     <p className="text-[16px]">Owned Vehicles</p>

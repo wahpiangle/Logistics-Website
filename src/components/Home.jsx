@@ -9,14 +9,14 @@ export default function Home() {
         <>
             <div className="bg-cover bg-no-repeat" style={{ backgroundImage: `url(${shipImg})` }}>
                 <NavBar />
-                <div className="flex flex-col px-28 max-w-3xl py-28">
-                    <div className={`${styles.heroSubText} max-w-fit`}>Logistics & Supply Chain Solutions</div>
-                    <h1 className={`${styles.heroHeadText}`}>Your Gateway to any Destination in the World</h1>
-                    <p className="text-white">In augue ligula, feugiat ut nulla consequat. Ut est lacus, molestie in arcu no, iaculis vehicula ipsum. Nunc faucibus, nisl id dapibus finibus, enim diam interdum nulla, sed laoreet risus lectus. </p>
+                <div className="flex flex-col p-10 max-w-3xl sm:p-28">
+                    <div className={`${styles.heroSubText} max-w-fit mb-2`}>Logistics & Supply Chain Solutions</div>
+                    <h1 className={`${styles.heroHeadText} mb-2`}>Your Gateway to any Destination in the World</h1>
+                    <p className="text-white sm:text-[14px] text-[12px]">In augue ligula, feugiat ut nulla consequat. Ut est lacus, molestie in arcu no, iaculis vehicula ipsum. Nunc faucibus, nisl id dapibus finibus, enim diam interdum nulla, sed laoreet risus lectus. </p>
                     <button className="yellow-gradient p-4 max-w-[194px] mt-4">Explore More</button>
                 </div>
             </div>
-            <div className="bg-secondary flex items-center px-28 py-14 gap-10 flex-col md:flex-row">
+            <div className="bg-secondary flex items-center px-8 sm:px-28 py-14 gap-10 flex-col md:flex-row">
                 <div className="max-w-2xl">
                     <div className="bg-[#00000012] text-black border-l-2 border-primaryyellow px-2 text-[12px] max-w-fit">What We Do</div>
                     <h1 className="text-[28px] lg:text-[32px] font-semibold">Safe & Reliable Cargo Solutions</h1>
@@ -61,7 +61,7 @@ export default function Home() {
                 </div>
             </div>
             <img src={cargoBox} />
-            <div className="relative z-10 flex gap-10 justify-around px-12 mx-24 md:mx-48 my-12 py-12 -mt-24 bg-fixed bg-white flex-col lg:flex-row">
+            <div className="relative z-10 flex gap-10 justify-around px-12 mx-10 lg:mx-48 my-12 py-12 -mt-12 sm:-mt-24 bg-fixed bg-white flex-col lg:flex-row">
                 <div className="">
                     <div className="bg-[#00000012] text-black border-l-2 border-primaryyellow px-2 text-[12px] max-w-fit">Why Us</div>
                     <h1 className="xl:text-[30px] text-[20px] font-semibold">We provide full range global logistics solution</h1>
@@ -77,7 +77,7 @@ export default function Home() {
                 </div>
                 <img src={womanPlane} className="object-contain w-[400px] h-auto" />
             </div>
-            <div className="flex justify-center flex-col">
+            <div className="justify-center flex-col lg:flex hidden">
                 <h1 className="xl:text-[30px] text-[20px] font-semibold text-center">Transporting Across The World</h1>
                 <div className="flex p-8 gap-8">
                     {solutions.map((solution) =>(
