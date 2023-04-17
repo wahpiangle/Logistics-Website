@@ -83,7 +83,7 @@ export default function NavBar() {
                 <AiFillLinkedin className="text-[24px] text-white cursor-pointer" />
             </div>
             <div className="flex justify-center">
-                <button className="bg-white px-4">Request Quote</button>
+                <button className="bg-white px-4"><NavLink to="/contact">Request Quote</NavLink></button>
             </div>
         </nav>
     )
