@@ -6,6 +6,8 @@ import Pricing from './components/Pricing'
 import Contact from './components/Contact'
 import Service from './components/Service'
 import Project from './components/Project'
+import Error from './components/Error'
+
 function App() {
 
   const router = createBrowserRouter(
@@ -17,6 +19,7 @@ function App() {
         <Route path='project' element={<Project />} />
         <Route path="pricing" element={<Pricing />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="*" element={<Error/>} />
       </Route>
     ))
 
