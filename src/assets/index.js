@@ -41,6 +41,15 @@ import cargoBg from './cargoBg.png'
 import shipServices from './ship_services.png'
 import serviceLorry from './service_lorry.png'
 import contact from './contact.png'
+import project1 from './project1.png'
+import project2 from './project2.png'
+import project3 from './project3.png'
+import project4 from './project4.png'
+import project5 from './project5.png'
+import project6 from './project6.png'
+import projectBg from './projectBg.png'
+import projectHover from './projectHover.png'
+import projectItemBg from './projectitem_bg.png'
 
 export{
     companyLogo,
@@ -85,5 +94,14 @@ export{
     cargoBg,
     shipServices,
     serviceLorry,
-    contact
+    contact,
+    project1,
+    project2,
+    project3,
+    project4,
+    project5,
+    project6,
+    projectBg,
+    projectHover,
+    projectItemBg
 }

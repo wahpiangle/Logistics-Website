@@ -7,6 +7,8 @@ import Contact from './components/Contact'
 import Service from './components/Service'
 import Project from './components/Project'
 import Error from './components/Error'
+import ProjectLayout from './components/ProjectLayout'
+import ProjectItem from './components/ProjectItem'
 
 function App() {
 
@@ -16,7 +18,10 @@ function App() {
         <Route index element={<Home />} />
         <Route path="about" element={<About />}/>
         <Route path="service" element={<Service />} />
-        <Route path='project' element={<Project />} />
+        <Route path="project" element={<ProjectLayout />}>
+          <Route index element={<Project />} />
+          <Route path=":id" element={<ProjectItem />} />
+        </Route>
         <Route path="pricing" element={<Pricing />} />
         <Route path="contact" element={<Contact />} />
         <Route path="*" element={<Error/>} />
