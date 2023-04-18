@@ -47,7 +47,7 @@ import project3 from './project3.png'
 import project4 from './project4.png'
 import project5 from './project5.png'
 import project6 from './project6.png'
-import projectBg from './projectBg.png'
+import projectBg from './projectbg.png'
 import projectHover from './projectHover.png'
 import projectItemBg from './projectitem_bg.png'
 
